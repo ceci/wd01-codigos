@@ -1,0 +1,37 @@
+<meta charset="UTF-8"/>
+
+<h2>Álcool ou gasolina?</h2>
+
+<script>
+	var tanque = 40;
+
+	var caminhoComGasolina = 480;
+	var consumoDeGasolina = caminhoComGasolina / tanque;
+	document.write("Seu carro faz ");
+	document.write(Math.round(consumoDeGasolina));
+	document.write(" kms/litro de gasolina");
+	document.write("<br>");
+
+	var caminhoComAlcool = 300;
+	var consumoDeAlcool = caminhoComAlcool / tanque;
+	document.write("Seu carro faz ");
+	document.write(Math.round(consumoDeAlcool));
+	document.write(" kms/litro de álcool");
+	document.write("<br>");
+</script>
+
+
+<h3>Desafio: preço por km rodado</h3>
+
+<script>
+	var precoDaGasolina = 2.90;
+	var precoPorKilometroGasolina = precoDaGasolina / consumoDeGasolina;
+	document.write("O preço para rodar 1km com gasolina é R$ ");
+	document.write(precoPorKilometroGasolina);
+	document.write("<br>");
+
+	var precoDoAlcool = 2.40;
+	var precoPorKilometroAlcool = precoDoAlcool / consumoDeAlcool;
+	document.write("O preço para rodar 1km com álcool é R$ ");
+	document.write(precoPorKilometroAlcool);
+</script>
