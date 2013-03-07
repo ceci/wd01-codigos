@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<h3>Testando erro de sintaxe na função: declaração sem parênteses</h3>
+Olhe o console no navegador para ver o erro!<br>
+
+<script>
+	var pulaLinhaSemParenteses = function {
+		document.write("<br>");
+		document.write("<hr>");
+		document.write("<br>");
+	};
+
+	document.write("Esqueci os parênteses");
+	pulaLinhaSemParenteses();
+</script>
+
+<h3>Testando erro de sintaxe na função: declaração sem a palavra function()</h3>
+Olhe o console no navegador para ver o erro!<br>
+
+<script>
+	var pulaLinhaSemFunction = {
+		document.write("<br>");
+		document.write("<hr>");
+		document.write("<br>");
+	};
+
+	document.write("Esqueci a parte function()");
+	pulaLinhaSemFunction();
+</script>
+
+<h3>Testando erro de sintaxe na função: chamada da função sem parênteses</h3>
+Esse não dá erro de execução, mas também não executa o código do pulaLinha!<br>
+
+<script>
+	var pulaLinha = function() {
+		document.write("<br>");
+		document.write("<hr>");
+		document.write("<br>");
+	};
+
+	document.write("Chamei sem parênteses. Apareceu o hr esperado?");
+	pulaLinha;
+</script>

@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<h2>Mostrando idades</h2>
+... e definindo funções pela primeira vez! <br><br>
+
+<script>
+	var pulaLinha = function() {
+		document.write("<br>");
+		document.write("<hr>");
+		document.write("<br>");
+	};
+
+	var mostra = function(frase) {
+		document.write("<big>" + frase + "</big>");
+		pulaLinha();
+	};
+
+	var ano = 2013;
+	mostra("Eu nasci em: " + (ano - 25));
+	mostra("Adriano nasceu em: " + (ano - 26));
+	mostra("Paulo nasceu em: " + (ano - 32));
+
+	mostra("A soma das nossas idades é: " + (25 + 32 + 26));
+</script>
