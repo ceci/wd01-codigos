@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<h2>Pontos modificados do campeonato</h2>
+
+<script>
+	var pulaLinha = function() {
+		document.write("<br><hr><br>");
+	};
+
+	var mostra = function(frase) {
+		document.write(frase);
+		pulaLinha();
+	};
+
+	var sorteia = function(maximo) {
+		return Math.round(Math.random() * maximo);
+	};
+
+	var numeroSorteado = sorteia(100);
+	var chute = prompt("Qual é o número sorteado?");
+	if (isNaN(chute)) {
+		mostra("Só números são chutes válidos.")
+	} else if (chute == numeroSorteado) {
+		mostra("Você acertou!");
+	} else if (chute < numeroSorteado) {
+		mostra("Você chutou muito baixo! Eu tinha escolhido o " + numeroSorteado);
+	} else {
+		mostra("Você chutou muito alto! Eu tinha escolhido o " + numeroSorteado);
+	}
+
+</script>
