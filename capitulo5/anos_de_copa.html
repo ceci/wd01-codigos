@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+
+<h2>Anos de copa do mundo</h2>
+
+Nos seguintes anos, tivemos Copas do Mundo de futebol.<br><br>
+
+<script>
+	function mostra (frase) {
+		document.write(frase + "<br>");
+	}
+
+	var anoDeCopa = 1930;
+	var anoLimite = prompt("Você quer ver copas do mundo até que ano?");
+
+	while (anoDeCopa <= anoLimite) {
+		mostra(anoDeCopa);
+		anoDeCopa = anoDeCopa + 4;
+	}
+	mostra("Essas são todas as copas até o ano " + anoLimite);
+</script>
