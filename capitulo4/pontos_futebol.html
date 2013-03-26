@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<h2>Pontos modificados do campeonato</h2>
+
+<script>
+	var pulaLinha = function() {
+		document.write("<br><hr><br>");
+	}
+
+	var mostra = function(frase) {
+		document.write(frase);
+		pulaLinha();
+	};
+
+	var calculaPontos = function(vitorias, empates) {
+		return (vitorias * 3) + empates;
+
+	}
+
+	var vitoriasCDC = prompt("Quantos jogos o CDC Futebol Clube venceu?");
+	var empatesCDC = prompt("Quantos jogos o CDC Futebol Clube empatou?");
+	pontosCDC = calculaPontos(vitoriasCDC, empatesCDC);
+
+	var vitoriasLV = prompt("Quantos jogos o Livros Velhos venceu?");
+	var empatesLV = prompt("Quantos jogos o Livros Velhos empatou?");
+	pontosLV = calculaPontos(vitoriasLV, empatesLV);
+
+	if(pontosCDC > pontosLV) {
+		mostra("Nosso time está indo MELHOR que o Livros Velhos");
+	}
+	if (pontosCDC < pontosLV) {
+		mostra("Nosso time está indo PIOR que o Livros Velhos");
+	}
+	if (pontosCDC == pontosLV) {
+		mostra("Nosso time está EMPATADO com o Livros Velhos");
+	}
+
+</script>
