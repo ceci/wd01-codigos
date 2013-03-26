@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<h2>Cálculo de IMC</h2>
+
+<script>
+	var pulaLinha = function() {
+		document.write("<br><hr><br>");
+	}
+
+	var mostra = function(frase) {
+		document.write("<big>" + frase + "</big>");
+		pulaLinha();
+	};
+
+	var calculaIMC = function(peso, altura) {
+		var imc = peso / (altura * altura);
+		return imc;
+	}
+
+	var nome = prompt("Digite seu nome:");
+	var peso = prompt("Oi " + nome + " , quanto você pesa? (ex. 52.5)");
+	var altura = prompt("Legal, " + nome + ", e qual sua altura? (ex. 1.53)");
+	var imcCalculado = calculaIMC(peso, altura);
+	mostra("Olá " + nome);
+	mostra("Seu IMC é " + imcCalculado);
+	mostra("Você está " + (imcCalculado - 18.5) + " pontos acima do limite de magreza");
+	mostra("E está " + (35 - imcCalculado) + " pontos abaixo da obesidade severa");
+
+	var imc21 = Math.round(21 * altura * altura);
+	mostra("Para chegar a um IMC de 21 você deveria pesar " + imc21 + " kg.")
+</script>
