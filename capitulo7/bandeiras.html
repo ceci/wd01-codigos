@@ -1,0 +1,165 @@
+<meta charset="UTF-8">
+<html>
+<body bgcolor="#DDD">
+
+<style type="text/css">
+	.flags {
+		float:left;
+		margin: 20px;
+	}
+</style>
+
+<h1>Bandeiras</h1>
+
+<div class="flags">
+<h3>Colômbia</h3>
+<canvas id="colombia" width="300" height="200"></canvas>
+
+<script type="text/javascript">
+	var escala = 1.2;
+	var bandeira = document.getElementById("colombia");
+	bandeira.width *= escala;
+	bandeira.height *= escala;
+	var largura = bandeira.width;
+	var altura = bandeira.height;
+	var pincel = bandeira.getContext("2d");
+
+	pincel.fillStyle = "#FCD116";
+	pincel.fillRect(0, 0, largura, altura/2);
+
+	pincel.fillStyle = "#003893";
+	pincel.fillRect(0, altura/2, largura, altura/4);
+
+	pincel.fillStyle = "#CE1126";
+	pincel.fillRect(0, altura*3/4, largura, altura*3/4);
+</script>
+</div>
+
+<div class="flags">
+<h3>Madagascar</h3>
+<canvas id="madagascar" width="300" height="200"></canvas>
+
+<script type="text/javascript">
+	var escala = 1.2;
+	var bandeira = document.getElementById("madagascar");
+	bandeira.width *= escala;
+	bandeira.height *= escala;
+	var largura = bandeira.width;
+	var altura = bandeira.height;
+	var pincel = bandeira.getContext("2d");
+
+	pincel.fillStyle = "#FFFFFF";
+	pincel.fillRect(0, 0, largura/3, altura);
+
+	pincel.fillStyle = "#fc3d32";
+	pincel.fillRect(largura/3, 0, largura*2/3, altura/2);
+
+	pincel.fillStyle = "#007e3a";
+	pincel.fillRect(largura/3, altura/2, largura*2/3, altura/2);
+</script>
+</div>
+
+<div class="flags">
+<h3>Laos</h3>
+<canvas id="laos" width="300" height="200"></canvas>
+
+<script type="text/javascript">
+	var bandeira = document.getElementById("laos");
+	bandeira.width *= escala;
+	bandeira.height *= escala;
+	var largura = bandeira.width;
+	var altura = bandeira.height;
+	var pincel = bandeira.getContext("2d");
+
+	pincel.fillStyle = "#CE1126";
+	pincel.fillRect(0, 0, largura, altura);
+
+	pincel.fillStyle = "#002868";
+	pincel.fillRect(0, altura/4, largura, altura/2);
+
+	pincel.fillStyle = "#FFFFFF";
+	pincel.arc(largura/2, altura/2, altura/5, 0, 2*Math.PI);
+	pincel.fill();
+</script>
+</div>
+
+<div class="flags">
+<h3>Niger</h3>
+<canvas id="niger" width="700" height="600"></canvas>
+
+<script type="text/javascript">
+	var bandeira = document.getElementById("niger");
+	bandeira.width *= escala/3;
+	bandeira.height *= escala/3;
+	var largura = bandeira.width;
+	var altura = bandeira.height;
+	var pincel = bandeira.getContext("2d");
+
+	pincel.fillStyle = "#E05206";
+	pincel.fillRect(0, 0, largura, altura/3);
+
+	pincel.fillStyle = "#FFFFFF";
+	pincel.fillRect(0, altura/3, largura, altura/3);
+
+	pincel.fillStyle = "#0DB02B";
+	pincel.fillRect(0, altura*2/3, largura, altura/3);
+
+	pincel.fillStyle = "#E05206";
+	pincel.arc(largura/2, altura/2, altura*85/600, 0, 2*Math.PI);
+	pincel.fill();
+</script>
+</div>
+
+<div class="flags">
+<h3>República Tcheca</h3>
+<canvas id="republicaTcheca" width="300" height="200"></canvas>
+
+<script type="text/javascript">
+	var bandeira = document.getElementById("republicaTcheca");
+	bandeira.width *= escala;
+	bandeira.height *= escala;
+	var largura = bandeira.width;
+	var altura = bandeira.height;
+	var pincel = bandeira.getContext("2d");
+
+	pincel.fillStyle = "white";
+	pincel.fillRect(0, 0, largura, altura/2);
+
+	pincel.fillStyle = "red";
+	pincel.fillRect(0, altura/2, largura, altura/2);
+
+	pincel.fillStyle = "darkblue";
+	pincel.beginPath();
+	pincel.moveTo(0,0);
+	pincel.lineTo(largura/2, altura/2);
+	pincel.lineTo(0, altura);
+	pincel.fill();
+</script>
+</div>
+
+<div class="flags">
+<h3>Noruega</h3>
+<canvas id="noruega" width="275" height="200"></canvas>
+
+<script type="text/javascript">
+	var bandeira = document.getElementById("noruega");
+	bandeira.width *= escala;
+	bandeira.height *= escala;
+	var largura = bandeira.width;
+	var altura = bandeira.height;
+	var pincel = bandeira.getContext("2d");
+
+	pincel.fillStyle = "darkred";
+	pincel.fillRect(0, 0, largura, altura);
+
+	pincel.fillStyle = "white";
+	pincel.fillRect((largura*6/22), 0, largura*4/22, altura);
+	pincel.fillRect(0, altura*6/16, largura, altura*4/16);
+
+	pincel.fillStyle = "darkblue";
+	pincel.fillRect((largura*7/22), 0, largura*2/22, altura);
+	pincel.fillRect(0, altura*7/16, largura, altura*2/16);
+</script>
+</div>
+</body>
+</html>
